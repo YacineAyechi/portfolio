@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yacine Ayechi - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c39c045465.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav id="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <a href="#" id="scroll-arrow"><i class="fa-solid fa-arrow-up"></i></a>
+      <section id="home">
+        <div class="home-container">
+          <h1>Yacine Ayechi</h1>
+          <h2>Graphic Designer</h2>
+          <button class="hire-me-btn">Hire Me!</button>
+        </div>
+      </section>
+      <section id="about" class="about-me">
+        <h1>About Me</h1>
+        <p>
+          I am a graphic designer with 2 years of experience in this field. I
+          work on logo design, poster design, web/app design, and anything else.
+          I am a full-time freelancer so you can be sure that your projects will
+          be of the greatest quality.<br />
+          Feel free to
+          <a href="#contact" class="cntme">Contact Me</a>
+          anytime!
+        </p>
+      </section>
+      <section id="portfolio" class="portfolio">
+        <h1>Portfolio</h1>
+        <div class="image-grid">
+          <img src="./imgs/portfolio/myeverything.png" class="gallery-item" />
+          <img src="./imgs/portfolio/silence.png" class="gallery-item" />
+          <img src="./imgs/portfolio/moon.png" class="gallery-item" />
+          <img src="./imgs/portfolio/medusa.png" class="gallery-item" />
+          <img
+            src="./imgs/portfolio/cancelling noise.png"
+            class="gallery-item"
+          />
+          <img src="./imgs/portfolio/badluck.png" class="gallery-item" />
+          <img src="./imgs/portfolio/monalisa-2.png" class="gallery-item" />
+          <img src="./imgs/portfolio/balckb-logo.jpg" class="gallery-item" />
+          <a
+            href="https://www.behance.net/gallery/126317661/Lets-Match-Online-Dating-App"
+            target="_blank"
+          >
+            <img src="./imgs/portfolio/letsmatch.png" />
+          </a>
+        </div>
+        <div id="lightbox" class="lightbox">
+          <img id="lightbox-image" class="lightbox-image" src="" />
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact-container">
+          <h1>Contact Me</h1>
+          <a href="mailto: yacineayachi9@gmail.com" class="email"
+            >yacineayachi9@gmail.com</a
+          >
+          <form id="contact-form" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <p>
+          &copy; <span id="year"></span>
+          <a href="#" class="name">Yacine Ayechi</a>. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
